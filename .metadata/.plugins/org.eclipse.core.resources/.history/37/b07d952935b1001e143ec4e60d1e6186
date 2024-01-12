@@ -1,0 +1,22 @@
+package app;
+
+public class InsertEmp {
+
+	public static void main(String[] args) {
+		
+		//create the service
+				StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+										
+				//read the info hibernate.cfg.xml file
+				Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
+										
+				//Connect to database
+				SessionFactory sf = metadata.getSessionFactoryBuilder().build();
+										
+				//create session
+				Session session = sf.openSession();	
+		
+		
+	}
+	
+}

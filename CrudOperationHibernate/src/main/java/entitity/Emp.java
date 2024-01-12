@@ -14,27 +14,27 @@ import javax.persistence.Table;
 public class Emp {
 	
 	@Id
-	int empno;
+	Integer empno;
 	@Column
 	String ename;
 	@Column
 	String job;
 	@Column
-	int mgr;
+	Integer mgr;
 	@Column
 	Date hiredate;
 	@Column
-	double sal;
+	Double sal;
 	@Column
 	Double comm;
 	@Column
-	int deptno;
+	Integer deptno;
 	
 	public Emp() {
 		super();
 	}
 
-	public Emp(int empno, String ename, String job, int mgr, Date hiredate, double sal, Double comm, int deptno) {
+	public Emp(Integer empno, String ename, String job, Integer mgr, Date hiredate, Double sal, Double comm, Integer deptno) {
 		super();
 		this.empno = empno;
 		this.ename = ename;
@@ -46,11 +46,11 @@ public class Emp {
 		this.deptno = deptno;
 	}
 
-	public int getEmpno() {
+	public Integer getEmpno() {
 		return empno;
 	}
 
-	public void setEmpno(int empno) {
+	public void setEmpno(Integer empno) {
 		this.empno = empno;
 	}
 
@@ -70,11 +70,11 @@ public class Emp {
 		this.job = job;
 	}
 
-	public int getMgr() {
+	public Integer getMgr() {
 		return mgr;
 	}
 
-	public void setMgr(int mgr) {
+	public void setMgr(Integer mgr) {
 		this.mgr = mgr;
 	}
 
@@ -86,11 +86,11 @@ public class Emp {
 		this.hiredate = hiredate;
 	}
 
-	public double getSal() {
+	public Double getSal() {
 		return sal;
 	}
 
-	public void setSal(double sal) {
+	public void setSal(Double sal) {
 		this.sal = sal;
 	}
 
@@ -102,13 +102,21 @@ public class Emp {
 		this.comm = comm;
 	}
 
-	public int getDeptno() {
+	public Integer getDeptno() {
 		return deptno;
 	}
 
-	public void setDeptno(int deptno) {
+	public void setDeptno(Integer deptno) {
 		this.deptno = deptno;
 	}
+
+	@Override
+	public String toString() {
+		return "Emp [empno=" + empno + ", ename=" + ename + ", job=" + job + ", mgr=" + mgr + ", hiredate=" + hiredate
+				+ ", sal=" + sal + ", comm=" + comm + ", deptno=" + deptno + "]";
+	}
+	
+	
 	
 	
 
