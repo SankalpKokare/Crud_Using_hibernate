@@ -1,0 +1,12 @@
+package app;
+
+public class CompositionFetch {
+	
+	public static void main(String[] args) {
+		
+		//create the service
+		StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+		
+	}
+
+}

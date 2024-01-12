@@ -1,0 +1,14 @@
+package app;
+
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+public class UpdateEmp {
+		
+	public static void main(String[] args) {
+		
+		StandardServiceRegistryBuilder = new StandardServiceRegistryBuilder().configure().build
+		
+		
+	}
+	
+}

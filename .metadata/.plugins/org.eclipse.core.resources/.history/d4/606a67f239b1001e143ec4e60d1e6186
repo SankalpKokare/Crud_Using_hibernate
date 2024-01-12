@@ -1,0 +1,10 @@
+package app;
+
+public class DeleteEmp {
+	
+	private void main() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package app;
+
+public class DeleteEmp {
+	
+	public static void main(String[] args) {
+		
+		
+			
+	}
+	
+}
