@@ -1,0 +1,18 @@
+package app;
+
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+public class CompositionFetch {
+	
+	public static void main(String[] args) {
+		
+		//create the service
+		StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
+		
+		//read info from hibernate.cfg.xml file
+		Metadata metadata = new MetadataSources(registry).getMetadataBuilder().build();
+		
+	}
+
+}
